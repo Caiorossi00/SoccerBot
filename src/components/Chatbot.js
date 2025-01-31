@@ -13,7 +13,7 @@ const leagueIds = {
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
-      text: "Olá! Em que liga de futebol você está interessado hoje? Digite uma das opções: Premier League, Brasileirão, La Liga, etc.",
+      text: "Fala, parceiro! Em que liga de futebol você está interessado hoje? É só me dizer e eu te mando todos os jogos do dia!",
       user: false,
     },
   ]);

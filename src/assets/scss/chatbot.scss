@@ -1,66 +1,87 @@
-$primary-color: #007bff;
-$secondary-color: #e9ecef;
-$border-color: #ccc;
-$light-gray: #f9f9f9;
-$dark-gray: #ddd;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 .chatbot-container {
-  max-width: 400px;
-  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #6a4c9c;
   padding: 20px;
-  border: 1px solid $border-color;
-  border-radius: 10px;
-  background-color: $light-gray;
+  color: #ffffff;
 
   .chatbot-messages {
-    height: 300px;
+    width: 100%;
+    max-width: 600px;
+    height: 70%;
     overflow-y: auto;
-    margin-bottom: 10px;
-    border: 1px solid $dark-gray;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 
     .message {
-      margin-bottom: 10px;
-      padding: 8px;
-      border-radius: 5px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      max-width: 80%;
+      word-wrap: break-word;
+      line-height: 1.5;
+    }
 
-      &.user {
-        background-color: $primary-color;
-        color: white;
-        align-self: flex-end;
-      }
+    .user {
+      background-color: #3d2b75;
+      align-self: flex-end;
+      margin-left: 10vw;
+    }
 
-      &.bot {
-        background-color: $secondary-color;
-        color: black;
-        align-self: flex-start;
-      }
+    .bot {
+      background-color: #8e7cc3;
+      align-self: flex-start;
     }
   }
 
   .chatbot-input {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
     input {
-      flex: 1;
-      padding: 8px;
-      border: 1px solid $border-color;
-      border-radius: 5px;
-      margin-right: 10px;
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      outline: none;
+      background-color: #f4f4f4;
+      color: #333;
+      transition: background-color 0.3s;
+
+      &:focus {
+        background-color: #e0e0e0;
+      }
     }
 
     button {
-      padding: 8px 12px;
-      background-color: $primary-color;
+      width: 15%;
+      padding: 10px;
+      background-color: #3d2b75;
       color: white;
+      font-size: 1rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 20px;
       cursor: pointer;
+      transition: background-color 0.3s;
 
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: #2b1b56;
       }
     }
   }
