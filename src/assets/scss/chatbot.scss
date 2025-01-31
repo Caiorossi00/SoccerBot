@@ -1,0 +1,67 @@
+$primary-color: #007bff;
+$secondary-color: #e9ecef;
+$border-color: #ccc;
+$light-gray: #f9f9f9;
+$dark-gray: #ddd;
+
+.chatbot-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  background-color: $light-gray;
+
+  .chatbot-messages {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid $dark-gray;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+
+    .message {
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+
+      &.user {
+        background-color: $primary-color;
+        color: white;
+        align-self: flex-end;
+      }
+
+      &.bot {
+        background-color: $secondary-color;
+        color: black;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  .chatbot-input {
+    display: flex;
+
+    input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
