@@ -1,0 +1,51 @@
+#header {
+  background-color: white;
+  width: 720px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 32px;
+  height: 300px;
+  position: relative;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    width: 40%;
+    margin-left: 60px;
+
+    h1 {
+      font-size: 1.7rem;
+      color: #333;
+      margin-top: -10px;
+    }
+
+    input {
+      padding: 1.3em 1em;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 90%;
+      box-sizing: border-box;
+      font-family: "AgrandirRegular";
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+  }
+
+  .header-image {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+
+    img {
+      width: 320px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

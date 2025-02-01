@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import Chatbot from "./components/Chatbot";
+import UI from "./components/UI";
+// import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
     <div className="App">
-      <Chatbot />
+      <UI />
     </div>
   );
 }
