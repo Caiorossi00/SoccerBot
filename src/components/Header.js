@@ -9,6 +9,11 @@ const leagueIds = {
   "la liga": 140,
   "serie a": 135,
   bundesliga: 78,
+  "ligue 1": 61,
+  eredivisie: 88,
+  "serie b": 73,
+  "major league soccer": 16,
+  "liga portuguesa": 94,
 };
 
 const Header = ({ onSendMessage }) => {
