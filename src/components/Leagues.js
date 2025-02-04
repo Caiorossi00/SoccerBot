@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import ligasDisplay from "../assets/data";
 import "../assets/scss/leagues.scss";
 
 const Leagues = () => {
@@ -20,12 +21,13 @@ const Leagues = () => {
 
   return (
     <div id="Leagues">
-      <h1>Ligas Disponíveis</h1>
+      <h1>Mais Buscadas</h1>
 
       <div id="leagues-display">
-        {ligas.length > 0 ? (
-          ligas.map((league) => (
+        {ligasDisplay.length > 0 ? (
+          ligasDisplay.map((league) => (
             <div key={league.id} className="league">
+              <img src={league.foto} alt={league.nome} />
               <p>{league.nome}</p>
             </div>
           ))
