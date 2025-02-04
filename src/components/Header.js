@@ -76,7 +76,9 @@ const Header = ({ onSendMessage }) => {
             placeholder="Digite aqui..."
             onKeyPress={handleKeyPress}
           />
-          <button onClick={handleSendMessage}>Enviar</button>
+          <button onClick={handleSendMessage}>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
       </div>
 

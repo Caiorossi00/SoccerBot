@@ -3,4 +3,56 @@
   width: 280px;
   height: 285px;
   border-radius: 32px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.info-tabs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10%;
+  justify-content: space-around;
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    img {
+      width: 100px;
+      height: 60px;
+      margin-left: -10px;
+    }
+
+    h1 {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.tab1 {
+  h1 {
+    margin-top: 20px;
+  }
+  img {
+    rotate: 192deg;
+  }
+}
+
+.tab2 {
+  display: flex;
+  flex-direction: row-reverse;
+
+  img {
+    transform: scaleX(-1);
+    rotate: 160deg;
+  }
+}
+
+.tab3 {
+  display: flex;
+  flex-direction: row-reverse;
 }

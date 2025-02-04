@@ -4,6 +4,7 @@ import Table from "./Table";
 import "../assets/scss/UI.scss";
 import Leagues from "./Leagues";
 import Info from "./Info";
+import Footer from "./Footer";
 
 const UI = () => {
   const [messages, setMessages] = useState([
@@ -27,15 +28,20 @@ const UI = () => {
 
   return (
     <div id="UI">
-      <div className="left-side">
-        <Header onSendMessage={handleSendMessage} />
-        <div>
-          <Leagues />
-          <Info />
+      <div id="main">
+        <div className="left-side">
+          <Header onSendMessage={handleSendMessage} />
+          <div>
+            <Leagues />
+            <Info />
+          </div>
         </div>
-      </div>
-      <div id="right-side">
-        <Table games={games} messages={messages} />
+        <div id="right-side">
+          <Table games={games} messages={messages} />
+        </div>
+        <div id="bottom">
+          <Footer />
+        </div>
       </div>
     </div>
   );

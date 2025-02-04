@@ -6,6 +6,11 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   #table-text {
     padding-top: 2em;
