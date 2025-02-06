@@ -25,10 +25,12 @@
       width: 100px;
       height: 60px;
       margin-left: -10px;
+      transition: ease 0.3s;
     }
 
     h1 {
       font-size: 0.8em;
+      transition: ease 0.3s;
     }
   }
 }
@@ -38,7 +40,11 @@
     margin-top: 20px;
   }
   img {
-    rotate: 192deg;
+    rotate: 202deg;
+
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 }
 
@@ -55,4 +61,11 @@
 .tab3 {
   display: flex;
   flex-direction: row-reverse;
+
+  img {
+    margin-top: -8px;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
